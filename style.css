@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: hsl(0, 0%, 95%);
+    line-height: 1.8;
+}
+
+.cards {
+    margin: 2.5em auto;
+    max-width: 280px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card {
+    padding: 2.6em;
+}
+
+.card img {
+    width: 30%;
+}
+
+.card__title {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    padding-top: 0.5em;
+}
+
+.card__desc {
+    color: hsla(0, 0%, 100%, 0.631);
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.card__sedans {
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+}
+
+.card__luxury {
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+}
+
+
+.card--bright-orange {
+    background: hsl(31, 77%, 52%);
+}
+
+.card--dark-cyan {
+    background: hsl(184, 100%, 22%);
+}
+
+.card--very-dark-cyan {
+    background: hsl(179, 100%, 13%);
+}
+
+.btn {
+    text-decoration: none;
+    color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 2em;
+    padding: 0.3em 1.9em;
+    text-align: center;
+    background: hsl(0, 0%, 95%);
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+.btn--bright-orange {
+    color: hsl(31, 77%, 52%);
+
+}
+
+.btn--dark-cyan {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn--very-dark-cyan {
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+@media(min-width: 48em) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 780px;
+        margin: 2rem auto;
+        padding: 1.4em;
+    }
+
+    .card__sedans {
+        border-bottom-left-radius: 0.3em;
+        border-top-right-radius: 0;
+    }
+
+    .card__luxury {
+        border-top-right-radius: 0.3em;
+        border-bottom-left-radius: 0;
+    }
+}
